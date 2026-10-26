@@ -1,0 +1,10 @@
+$kind: collection
+description: ""
+variables:
+  mytoken: 4|d2fRdMc4VNkofCcfWKGDEsS8veQ4u3hWY9pBlc7jda0b2ee4
+auth:
+  - id: d5f6241d-416d-4ddc-a673-22cd372dbee4
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{mytoken}}"

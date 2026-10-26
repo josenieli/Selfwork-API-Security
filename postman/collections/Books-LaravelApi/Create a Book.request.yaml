@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://localhost:8000/api/books
+method: POST
+headers:
+  Content-Type: application/json
+  Accept: application/json
+body:
+  type: formdata
+  content:
+    - type: text
+      key: title
+      value: Test
+    - type: text
+      key: description
+      value: "`+` ${alert(1)}"
+    - type: text
+      key: author
+      value: Nicola Milella
+    - type: text
+      key: published_year
+      value: "2003"
+    - type: text
+      key: user_id
+      value: "11"
+settings:
+  disabledSystemHeaders:
+    - accept
+order: 4000

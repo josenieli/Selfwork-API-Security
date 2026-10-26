@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://localhost:8000/api/register
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: Nicola Miella
+    - type: text
+      key: email
+      value: nicola.milella@aulab.it
+    - type: text
+      key: password
+      value: password
+    - type: text
+      key: c_password
+      value: password
+    - type: text
+      key: address
+      value: via verdi 92, Milano
+    - type: text
+      key: study
+      value: Università di Pisa
+    - type: text
+      key: idcard
+      value: "34234543"
+order: 1000

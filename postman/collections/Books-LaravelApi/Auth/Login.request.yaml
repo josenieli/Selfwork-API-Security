@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8000/api/login
+method: POST
+headers:
+  Authorization: Bearer 1|jDIgqXbqC9wp01pguMz2ares5NRwhJhHoNmBcNqSe94bc929
+body:
+  type: formdata
+  content:
+    - type: text
+      key: email
+      value: nicola.milella@aulab.it
+    - type: text
+      key: password
+      value: password
+order: 2000

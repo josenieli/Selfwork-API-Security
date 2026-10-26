@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://localhost:8000/api/books
+method: GET
+headers:
+  - key: Accept
+    value: application/json
+  - key: Authorization
+    value: Bearer 4|d2fRdMc4VNkofCcfWKGDEsS8veQ4u3hWY9pBlc7jda0b2ee4
+    disabled: true
+body:
+  type: json
+  content: ""
+settings:
+  disabledSystemHeaders:
+    - accept
+order: 2000

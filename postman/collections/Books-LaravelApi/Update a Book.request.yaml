@@ -1,0 +1,16 @@
+$kind: http-request
+description: Replace :id with the actual book ID
+url: http://localhost:8000/api/books/
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "title": "The Great Gatsby Updated",
+        "author": "F. Scott Fitzgerald",
+        "description": "An updated description.",
+        "published_year": 1925
+    }
+order: 5000

@@ -100,17 +100,17 @@ class BookController extends Controller
         }
 
         // SECURE
-        // if(!$user = Auth::user()){
-        //     return response()->json(['error' => 'Not autorised'], 401);
-        // }
-        // if($user->id != $book->user_id){
-        //     return response()->json(['error' => 'Not autorised'], 401);
-        // }
+        if(!$user = Auth::user()){
+            return response()->json(['error' => 'Not autorised'], 401);
+        }
+        if($user->id != $book->user_id){
+            return response()->json(['error' => 'Not autorised'], 401);
+        }
 
         // UNSECURE
         // Missing Validation
         // Missing Authorization Check
-        $book->update($request->all());
+        // $book->update($request->all());
 
         return response()->json([
             'data' => $book,
@@ -139,15 +139,15 @@ class BookController extends Controller
             return response()->json(['error' => 'Book not found'], 404);
         }
         // SECURE
-        // if(!$user = Auth::user()){
-        //     return response()->json(['error' => 'Not autorised'], 401);
-        // }
-        // if($user->id != $book->user_id){
-        //     return response()->json(['error' => 'Not autorised'], 401);
-        // }
+        if(!$user = Auth::user()){
+            return response()->json(['error' => 'Not autorised'], 401);
+        }
+        if($user->id != $book->user_id){
+            return response()->json(['error' => 'Not autorised'], 401);
+        }
 
         // UNSECURE
-        $book->delete();
+        // $book->delete();
 
         return response()->json([
             'message' => 'Book deleted successfully',

@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://localhost:8000/api/user
+method: GET
+headers:
+  Accept: application/json
+settings:
+  disabledSystemHeaders:
+    - accept
+order: 3000

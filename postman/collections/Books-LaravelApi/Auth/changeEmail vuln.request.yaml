@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:8000/api/email-change
+method: PUT
+body:
+  type: urlencoded
+  content:
+    email: nico@aulan.it
+    id: "11"
+auth:
+  type: noauth
+order: 5000

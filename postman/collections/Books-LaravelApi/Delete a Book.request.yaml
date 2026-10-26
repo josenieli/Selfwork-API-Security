@@ -1,0 +1,7 @@
+$kind: http-request
+description: Replace :id with the actual book ID
+url: http://localhost:8001/api/books/:id
+method: DELETE
+pathVariables:
+  id: ""
+order: 6000

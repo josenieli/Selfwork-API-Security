@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: ""
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Books-LaravelApi: b81ab034-ffee-4a8e-becf-e3998fac4c46
+
+localResources:
+  collections:
+    - ../Books-LaravelApi.postman_collection.json
